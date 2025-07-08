@@ -95,7 +95,7 @@ You can test these routes with curls like:
 
 **Login**: curl -X POST https://{api_id}.execute-api.{region}.amazonaws.com/login -H "Content-Type: application/json" -d '{"username": "test", "password": "test"}'
 
-**Protected Route**: GET https://{api_id}.execute-api.{region}.amazonaws.com/protected -H "Authorization: Bearer {token}"
+**Protected Route**: curl -X GET https://{api_id}.execute-api.{region}.amazonaws.com/protected -H "Authorization: Bearer {token}"
 
 ## 🔧 Customization
 
