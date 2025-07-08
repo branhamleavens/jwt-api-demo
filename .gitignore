@@ -1,0 +1,20 @@
+# === Terraform ===
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+crash.log
+
+# === AWS CLI credentials (just in case) ===
+.aws/credentials
+.aws/config
+
+# === Other ===
+deployment.zip
+layer.zip
+layer/
+build/
+package/
+*.pem
+.venv
+Pipfile.lock

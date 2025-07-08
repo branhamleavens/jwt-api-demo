@@ -1,0 +1,7 @@
+FROM public.ecr.aws/lambda/python:3.11
+
+COPY requirements.txt .
+
+# Install dependencies without pip cache to avoid permission issues
+RUN pip install --no-cache-dir -r requirements.txt -t /python
+
